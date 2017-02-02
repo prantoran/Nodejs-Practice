@@ -6,7 +6,7 @@ http.createServer(function(req,res){ //an event-listener
     if(req.url === '/' ){
         fs.createReadStream(__dirname+'/index.htm').pipe(res);
     }
-    else if(req.url === '/api'){
+    else if(req.url === '/json'){
 
      
         res.writeHead(200,{'Content-Type':'application/json'});//(statuscode,) 
